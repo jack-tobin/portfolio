@@ -52,8 +52,6 @@ export const EDUCATION: Education[] = [
     end: 'September 2022',
     link: 'https://www.kcl.ac.uk/',
     id: 'kcl',
-    description:
-      'Developed and implemented trading strategies using machine learning algorithms.',
   },
   {
     university: 'Northeastern University',
@@ -64,8 +62,6 @@ export const EDUCATION: Education[] = [
     end: 'May 2018',
     link: 'https://www.northeastern.edu/',
     id: 'northeastern',
-    description:
-      'Developed and implemented trading strategies using machine learning algorithms.',
   },
 ]
 
@@ -255,7 +251,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     link: 'https://www.qube-rt.com/',
     id: 'qrt',
     description:
-      "Develop and implement technological solutions to support the firm's cash and collateral management effort.",
+      "QRT is a global quantitative asset management firm. In this role I will be developing and implementing technology to support the fund's cash and collateral management effort.",
     stack: ['Python'],
   },
   {
@@ -267,8 +263,16 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     link: 'https://www.prismfp.com/',
     id: 'prism',
     description:
-      'Build and deploy options and futures calibration models, maintain REST APIs, develop data pipelines.',
-    stack: ['Python', 'AWS Cloud', 'Flask', 'Docker', 'Kubernetes', 'Linux'],
+      'PrismFP is a global financial derivatives brokerage focusing on short-term interest rate and fixed income futures and options. PrismFP Analytics is the analytics engine behind that brokerage. In my role I researched and deployed quantitative financial models, built ETL data pipelines in Airflow, and maintained pricing libraries for exchange and OTC derivatives, all in a highly scalable cloud and microservice based infrastructure.',
+    stack: [
+      'Python',
+      'AWS Cloud',
+      'PostgreSQL',
+      'Flask/FastAPI',
+      'Docker',
+      'Kubernetes',
+      'Linux',
+    ],
   },
   {
     company: 'Fiduciary Trust International',
@@ -278,8 +282,9 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: 'June 2021',
     link: 'https://www.fiduciarytrust.com/',
     id: 'fti',
-    description: 'Built investment analysis models using Python, VBA and R.',
-    stack: ['Python', 'R', 'VBA', 'Windows Server'],
+    description:
+      "Fiduciary Trust is a global 'outsourced-CIO' investment advisor. In this role I supported the firm's Research and Portfolio management teams by building and automating investment analysis tools in Excel/VBA, scaling simulation and portfolio optimization tools in R/Shiny, and researching capital market expectations and building model portfolios as part of the annual asset allocation refresh.",
+    stack: ['Python', 'R/Shiny', 'Excel/VBA', 'Windows Server'],
   },
 ]
 

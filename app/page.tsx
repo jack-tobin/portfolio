@@ -139,6 +139,31 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
+        <h3 className="mb-5 text-lg font-medium">
+          Professional certifications
+        </h3>
+        <div className="space-y-6">
+          <div className="flex flex-wrap gap-2">
+            <span
+              key="cfa"
+              className="rounded-full bg-zinc-200 px-3 py-1 text-xs text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"
+            >
+              CFA Charterholder (2021)
+            </span>
+            <span
+              key="s65"
+              className="rounded-full bg-zinc-200 px-3 py-1 text-xs text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"
+            >
+              Series 65 (2019)
+            </span>
+          </div>
+        </div>
+      </motion.section>
+
+      <motion.section
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+      >
         <h3 className="mb-5 text-lg font-medium">Skills</h3>
         <div className="space-y-6">
           {Object.entries(
