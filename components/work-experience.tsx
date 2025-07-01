@@ -4,9 +4,10 @@ import { motion, AnimatePresence } from 'motion/react'
 import { ExternalLinkIcon, ChevronDownIcon, ChevronUpIcon } from 'lucide-react'
 import { Spotlight } from '@/components/ui/spotlight'
 
-type WorkExperience = {
+export type WorkExperience = {
   company: string
   title: string
+  location: string
   start: string
   end: string
   link: string
@@ -85,6 +86,15 @@ const WorkExperienceCard = ({ job }: WorkExperienceCardProps) => {
                     </h5>
                     <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
                       {job.description}
+                    </p>
+                  </div>
+
+                  <div>
+                    <h5 className="mb-2 text-sm font-medium text-zinc-700 dark:text-zinc-300">
+                      Location
+                    </h5>
+                    <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+                      {job.location}
                     </p>
                   </div>
 

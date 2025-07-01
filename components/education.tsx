@@ -4,15 +4,15 @@ import { motion, AnimatePresence } from 'motion/react'
 import { ExternalLinkIcon, ChevronDownIcon, ChevronUpIcon } from 'lucide-react'
 import { Spotlight } from '@/components/ui/spotlight'
 
-type Education = {
+export type Education = {
   university: string
+  location: string
   degree: string
   start: string
   grade: string
   end: string
   link: string
   id: string
-  description: string
 }
 
 interface EducationCardProps {
@@ -91,17 +91,17 @@ const EducationCard = ({ education }: EducationCardProps) => {
                       {education.grade}
                     </p>
                   </div>
+                </div>
 
-                  {education.description && (
-                    <div>
-                      <h5 className="mb-2 text-sm font-medium text-zinc-700 dark:text-zinc-300">
-                        Description
-                      </h5>
-                      <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-                        {education.description}
-                      </p>
-                    </div>
-                  )}
+                <div className="space-y-3">
+                  <div>
+                    <h5 className="mb-2 text-sm font-medium text-zinc-700 dark:text-zinc-300">
+                      Location
+                    </h5>
+                    <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+                      {education.location}
+                    </p>
+                  </div>
                 </div>
               </div>
             </motion.div>

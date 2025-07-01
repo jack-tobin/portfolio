@@ -9,7 +9,7 @@ import {
 } from 'lucide-react'
 import { Spotlight } from '@/components/ui/spotlight'
 
-type Project = {
+export type Project = {
   name: string
   description: string
   link: string | null

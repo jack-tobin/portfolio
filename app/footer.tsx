@@ -4,6 +4,7 @@ import { TextLoop } from '@/components/ui/text-loop'
 import { MonitorIcon, MoonIcon, SunIcon } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
+import moment from 'moment'
 
 const THEMES_OPTIONS = [
   {
@@ -72,7 +73,8 @@ export function Footer() {
       <div className="flex items-center justify-between">
         <a target="_blank">
           <TextLoop className="text-xs text-zinc-500">
-            <span>© 2025 Jack Tobin.</span>
+            <span>© {moment().year()} Jack Tobin.</span>
+            <span>Inspired by the Nim template.</span>
             <span>Built with Next.js, Tailwind, and Motion-Primitives.</span>
           </TextLoop>
         </a>

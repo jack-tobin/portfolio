@@ -1,33 +1,6 @@
-type Project = {
-  name: string
-  description: string
-  link: string | null
-  id: string
-  github: string
-  stack: string[]
-}
-
-type WorkExperience = {
-  company: string
-  title: string
-  start: string
-  end: string
-  link: string
-  id: string
-  description: string
-  stack: string[]
-}
-
-type Education = {
-  university: string
-  degree: string
-  start: string
-  grade: string
-  end: string
-  link: string
-  id: string
-  description: string
-}
+import { WorkExperience } from '@/components/work-experience'
+import { Project } from '@/components/projects'
+import { Education } from '@/components/education'
 
 type BlogPost = {
   title: string
@@ -42,14 +15,6 @@ type SocialLink = {
 }
 
 export const PROJECTS: Project[] = [
-  {
-    name: 'Portfolio Website',
-    description: 'Portfolio website built with Next.js and Tailwind CSS.',
-    link: 'https://jack-tobin.vercel.app',
-    id: 'portfolio',
-    github: 'https://github.com/jack-tobin/portfolio',
-    stack: ['Next.js', 'Tailwind CSS', 'TypeScript'],
-  },
   {
     name: 'Yield Curves',
     description: 'Visual analytics of sovereign bond curves.',
@@ -80,6 +45,7 @@ export const PROJECTS: Project[] = [
 export const EDUCATION: Education[] = [
   {
     university: "King's Business School, King's College London",
+    location: 'London, UK',
     degree: 'Master of Science in Economics and Finance',
     grade: 'Pass with Distinction (GPA: 79/100)',
     start: 'September 2021',
@@ -91,6 +57,7 @@ export const EDUCATION: Education[] = [
   },
   {
     university: 'Northeastern University',
+    location: 'Boston, US',
     degree: 'Bachelor of Arts in Economics',
     grade: 'magna cum laude (GPA: 3.8/4.0)',
     start: 'September 2013',
@@ -101,6 +68,7 @@ export const EDUCATION: Education[] = [
       'Developed and implemented trading strategies using machine learning algorithms.',
   },
 ]
+
 enum SkillCategory {
   PROGRAMMING = 'Programming languages',
   BACKEND = 'Backend',
@@ -280,7 +248,8 @@ export const SKILLS: Skill[] = [
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: 'Qube Research & Technologies',
-    title: 'Treasury Trader',
+    title: 'Treasury Trader [Upcoming]',
+    location: 'London, UK',
     start: 'August 2025',
     end: 'Present',
     link: 'https://www.qube-rt.com/',
@@ -292,6 +261,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: 'PrismFP Analytics',
     title: 'Quantitative Developer',
+    location: 'London, UK',
     start: 'October 2022',
     end: 'August 2025',
     link: 'https://www.prismfp.com/',
@@ -303,6 +273,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: 'Fiduciary Trust International',
     title: 'Research Associate - Quantitative & Risk Analytics',
+    location: 'Boston, US',
     start: 'June 2018',
     end: 'June 2021',
     link: 'https://www.fiduciarytrust.com/',
