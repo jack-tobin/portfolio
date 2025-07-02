@@ -164,7 +164,7 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-5 text-lg font-medium">Skills</h3>
+        <h3 className="mb-5 text-lg font-medium">Stack</h3>
         <div className="space-y-6">
           {Object.entries(
             SKILLS.reduce(

@@ -58,9 +58,6 @@ const WorkExperienceCard = ({ job }: WorkExperienceCardProps) => {
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <p className="text-sm text-zinc-600 dark:text-zinc-400">
-              {job.start} - {job.end}
-            </p>
             {isExpanded ? (
               <ChevronUpIcon className="h-4 w-4 text-zinc-500 dark:text-zinc-400" />
             ) : (
@@ -80,6 +77,15 @@ const WorkExperienceCard = ({ job }: WorkExperienceCardProps) => {
             >
               <div className="mt-4 border-t border-zinc-200 pt-4 dark:border-zinc-700">
                 <div className="space-y-3">
+                  <div>
+                    <h5 className="mb-2 text-sm font-medium text-zinc-700 dark:text-zinc-300">
+                      Dates
+                    </h5>
+                    <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+                      {job.start} - {job.end}
+                    </p>
+                  </div>
+
                   <div>
                     <h5 className="mb-2 text-sm font-medium text-zinc-700 dark:text-zinc-300">
                       Description

@@ -17,7 +17,7 @@ type SocialLink = {
 export const PROJECTS: Project[] = [
   {
     name: 'Yield Curves',
-    description: 'Visual analytics of sovereign bond curves.',
+    description: 'Visual analytics of sovereign bond curves',
     link: 'https://yield-curves-app.onrender.com',
     id: 'yield_curves',
     github: 'https://github.com/jack-tobin/yield-curves',
@@ -25,7 +25,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'MVGARCH',
-    description: 'Python library for multivariate GARCH time series analysis.',
+    description: 'Python library for multivariate GARCH time series analysis',
     link: null,
     github: 'https://github.com/jack-tobin/mvgarch',
     stack: ['Python'],
@@ -33,8 +33,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'ETL Portfolio',
-    description:
-      'Python library for expected-tail-loss portfolio optimization.',
+    description: 'Python library for expected tail loss portfolio optimization',
     link: null,
     github: 'https://github.com/jack-tobin/etlportfolio',
     stack: ['Python'],
@@ -66,16 +65,15 @@ export const EDUCATION: Education[] = [
 ]
 
 enum SkillCategory {
-  PROGRAMMING = 'Programming languages',
-  BACKEND = 'Backend',
-  FRONTEND = 'Frontend',
+  PROGRAMMING = 'Languages',
+  BACKEND = 'Backend frameworks',
+  FRONTEND = 'Frontend frameworks',
   DATA_ENGINEERING = 'Data engineering',
   DATABASES = 'Databases and storage',
   CLOUD = 'Cloud and infrastructure',
   DEVOPS = 'Devops',
-  MONITORING = 'Observability',
-  PROJECT_MANAGEMENT = 'Project management',
   ARCHITECTURE = 'Architecture',
+  OS = 'Operating systems',
 }
 
 type Skill = {
@@ -152,15 +150,15 @@ export const SKILLS: Skill[] = [
     category: SkillCategory.DATA_ENGINEERING,
   },
   {
+    name: 'PyArrow',
+    category: SkillCategory.DATA_ENGINEERING,
+  },
+  {
     name: 'Polars',
     category: SkillCategory.DATA_ENGINEERING,
   },
   {
     name: 'PyIceberg',
-    category: SkillCategory.DATA_ENGINEERING,
-  },
-  {
-    name: 'ETL pipelines',
     category: SkillCategory.DATA_ENGINEERING,
   },
 
@@ -181,6 +179,10 @@ export const SKILLS: Skill[] = [
     name: 'RDS',
     category: SkillCategory.DATABASES,
   },
+  {
+    name: 'Data lakes',
+    category: SkillCategory.DATABASES,
+  },
 
   // Cloud & Infrastructure
   {
@@ -195,9 +197,19 @@ export const SKILLS: Skill[] = [
     name: 'Docker',
     category: SkillCategory.CLOUD,
   },
+
+  // OS
   {
-    name: 'Linux (Ubuntu 22.04)',
-    category: SkillCategory.CLOUD,
+    name: 'Linux (Ubuntu 22.04, RHEL)',
+    category: SkillCategory.OS,
+  },
+  {
+    name: 'macOS',
+    category: SkillCategory.OS,
+  },
+  {
+    name: 'Windows 10/11',
+    category: SkillCategory.OS,
   },
 
   // DevOps & CI/CD
@@ -205,25 +217,25 @@ export const SKILLS: Skill[] = [
     name: 'GitLab CI/CD',
     category: SkillCategory.DEVOPS,
   },
-
-  // Monitoring & Observability
+  {
+    name: 'Github Actions',
+    category: SkillCategory.DEVOPS,
+  },
   {
     name: 'Grafana',
-    category: SkillCategory.MONITORING,
+    category: SkillCategory.DEVOPS,
   },
   {
     name: 'AWS CloudWatch',
-    category: SkillCategory.MONITORING,
+    category: SkillCategory.DEVOPS,
   },
-
-  // Project Management & Collaboration
   {
     name: 'Jira',
-    category: SkillCategory.PROJECT_MANAGEMENT,
+    category: SkillCategory.DEVOPS,
   },
   {
     name: 'Agile',
-    category: SkillCategory.PROJECT_MANAGEMENT,
+    category: SkillCategory.DEVOPS,
   },
 
   // Architecture & Design
@@ -233,10 +245,6 @@ export const SKILLS: Skill[] = [
   },
   {
     name: 'Microservices',
-    category: SkillCategory.ARCHITECTURE,
-  },
-  {
-    name: 'Data lakes',
     category: SkillCategory.ARCHITECTURE,
   },
 ]
@@ -251,7 +259,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     link: 'https://www.qube-rt.com/',
     id: 'qrt',
     description:
-      "QRT is a global quantitative asset management firm. In this role I will be developing and implementing technology to support the fund's cash and collateral management effort.",
+      "QRT is a global quantitative asset management firm. In this role I will be developing and implementing technology to support the fund's cash and collateral management effort",
     stack: ['Python'],
   },
   {
@@ -263,7 +271,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     link: 'https://www.prismfp.com/',
     id: 'prism',
     description:
-      'PrismFP is a global financial derivatives brokerage focusing on short-term interest rate and fixed income futures and options. PrismFP Analytics is the analytics engine behind that brokerage. In my role I researched and deployed quantitative financial models, built ETL data pipelines in Airflow, and maintained pricing libraries for exchange and OTC derivatives, all in a highly scalable cloud and microservice based infrastructure.',
+      'PrismFP is a global financial derivatives brokerage focusing on short-term interest rate and fixed income futures and options. PrismFP Analytics is the analytics engine behind that brokerage. In my role I researched and deployed quantitative financial models, built ETL data pipelines in Airflow, and maintained pricing libraries for exchange and OTC derivatives, all in a highly scalable cloud and microservice based infrastructure',
     stack: [
       'Python',
       'AWS Cloud',
@@ -283,7 +291,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     link: 'https://www.fiduciarytrust.com/',
     id: 'fti',
     description:
-      "Fiduciary Trust is a global 'outsourced-CIO' investment advisor. In this role I supported the firm's Research and Portfolio management teams by building and automating investment analysis tools in Excel/VBA, scaling simulation and portfolio optimization tools in R/Shiny, and researching capital market expectations and building model portfolios as part of the annual asset allocation refresh.",
+      "Fiduciary Trust is a global ultra-high net worth investment advisor. In this role I supported the firm's Research and Portfolio management teams by building and automating investment analysis tools in Excel/VBA, scaling simulation and portfolio optimization tools in R/Shiny, and researching capital market expectations and building model portfolios as part of the annual asset allocation refresh",
     stack: ['Python', 'R/Shiny', 'Excel/VBA', 'Windows Server'],
   },
 ]
