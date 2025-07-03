@@ -12,7 +12,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://jack-tobin.vercel.app/'),
+  metadataBase: new URL('https://jacktobin.dev/'),
   alternates: {
     canonical: '/',
   },
