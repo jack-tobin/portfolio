@@ -1,6 +1,6 @@
 # My personal website
 
-Live at [https://jack-tobin.vercel.app](https://jack-tobin.vercel.app)
+Live at [jacktobin.dev](jacktobin.dev)
 
 ## Overview
 
