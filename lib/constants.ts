@@ -1,1 +1,1 @@
-export const WEBSITE_URL = 'https://jack-tobin.vercel.app'
+export const WEBSITE_URL = 'https://jacktobin.dev'
