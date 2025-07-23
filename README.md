@@ -1,6 +1,6 @@
 # My personal website
 
-Live at [jacktobin.dev](jacktobin.dev)
+Live at [jacktobin.dev](https://jacktobin.dev)
 
 ## Overview
 
