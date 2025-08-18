@@ -252,14 +252,14 @@ export const SKILLS: Skill[] = [
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: 'Qube Research & Technologies',
-    title: 'Treasury Trader [Upcoming]',
+    title: 'Treasury Trader',
     location: 'London, UK',
     start: 'August 2025',
     end: 'Present',
     link: 'https://www.qube-rt.com/',
     id: 'qrt',
     description:
-      "QRT is a global quantitative asset management firm. In this role I will be developing and implementing technology to support the fund's cash and collateral management effort",
+      "QRT is a global quantitative asset management firm.",
     stack: ['Python'],
   },
   {
